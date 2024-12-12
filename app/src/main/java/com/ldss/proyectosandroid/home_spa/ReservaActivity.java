@@ -103,13 +103,14 @@ public class ReservaActivity extends AppCompatActivity {
 
 
         Reserva r = new Reserva();
+        r.setUID(Nombre);
         r.setFecha(Fecha);
         r.setHora(Hora);
         r.setNombre(Nombre);
         r.setDireccion(Direccion);
         r.setTelefono(Telefono);
-
-        databaseReference.child("Reserva").setValue(r).addOnCompleteListener(task -> {
+        String id= databaseReference.push().getKey();
+        databaseReference.child(id).setValue(r).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 Toast.makeText(this, "Reserva exitosa", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(ReservaActivity.this, HistorialActivity.class);

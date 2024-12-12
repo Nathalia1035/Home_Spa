@@ -35,7 +35,7 @@ public class CitasClienteActivity extends AppCompatActivity {
         btnIrAVerMas1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btnIrAVerMas1 = new Intent(CitasClienteActivity.this, Reserva_ClienteActivity.class);
+                Intent btnIrAVerMas1 = new Intent(CitasClienteActivity.this, ReservaActivity.class);
                 startActivities(new Intent[]{btnIrAVerMas1});
             }
         });
@@ -47,7 +47,7 @@ public class CitasClienteActivity extends AppCompatActivity {
         btnIrAVerMas2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btnIrAVerMas2 = new Intent(CitasClienteActivity.this, Reserva_ClienteActivity.class);
+                Intent btnIrAVerMas2 = new Intent(CitasClienteActivity.this, ReservaActivity.class);
                 startActivities(new Intent[]{btnIrAVerMas2});
             }
         });
@@ -59,7 +59,7 @@ public class CitasClienteActivity extends AppCompatActivity {
         btnIrAVerMas3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent btnIrAVerMas3 = new Intent(CitasClienteActivity.this, Reserva_ClienteActivity.class);
+                Intent btnIrAVerMas3 = new Intent(CitasClienteActivity.this, ReservaActivity.class);
                 startActivities(new Intent[]{btnIrAVerMas3});
             }
         });

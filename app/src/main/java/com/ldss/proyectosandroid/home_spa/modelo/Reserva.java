@@ -2,11 +2,20 @@ package com.ldss.proyectosandroid.home_spa.modelo;
 
 public class Reserva {
 
+    private String UID;
     private String fecha;
     private String hora;
     private  String nombre;
     private  String direccion;
     private  String telefono;
+
+    public String getUID() {
+        return UID;
+    }
+
+    public void setUID(String UID) {
+        this.UID = UID;
+    }
 
     public String getFecha() {
         return fecha;
