@@ -103,15 +103,16 @@
 
     <ListView
         android:id="@+id/ListViewCalificacion"
-        android:layout_width="405dp"
-        android:layout_height="391dp"
+        android:layout_width="411dp"
+        android:layout_height="462dp"
         android:layout_marginBottom="48dp"
         android:background="@drawable/custom_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
