@@ -1,13 +1,14 @@
 {
   "project_info": {
-    "project_number": "88601461313",
-    "project_id": "homespa-182bc24a",
-    "storage_bucket": "homespa-182bc24a.appspot.com"
+    "project_number": "944701009920",
+    "firebase_url": "https://home-spa-9002a-default-rtdb.firebaseio.com",
+    "project_id": "home-spa-9002a",
+    "storage_bucket": "home-spa-9002a.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:88601461313:android:b7829f1fc10e0ba90cfcc0",
+        "mobilesdk_app_id": "1:944701009920:android:941382639c16ed018a28e5",
         "android_client_info": {
           "package_name": "com.ldss.proyectosandroid.home_spa"
         }
@@ -15,26 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBrSirqTuWWm3vgEXE27Aox7QXqdBEBHrk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:88601461313:android:6d8f883989ab25d00cfcc0",
-        "android_client_info": {
-          "package_name": "com.lt.spahome"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyBrSirqTuWWm3vgEXE27Aox7QXqdBEBHrk"
+          "current_key": "AIzaSyBfgWuZqckeNxUiMyzgWWWlbOoqkuT5yU0"
         }
       ],
       "services": {
