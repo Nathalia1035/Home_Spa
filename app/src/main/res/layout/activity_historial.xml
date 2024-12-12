@@ -36,6 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <ListView
+        android:id="@+id/ListViewReservas"
         android:layout_width="376dp"
         android:layout_height="516dp"
         android:background="@drawable/custom_text"

@@ -114,6 +114,7 @@ public class ReservaActivity extends AppCompatActivity {
             if (task.isSuccessful()) {
                 Toast.makeText(this, "Reserva exitosa", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(ReservaActivity.this, HistorialActivity.class);
+                intent.putExtra("uid",Nombre);
                 startActivity(intent);
                 limpiarcajas();
 
