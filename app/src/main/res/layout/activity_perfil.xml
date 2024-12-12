@@ -26,14 +26,14 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="114dp"
-        android:layout_height="0dp"
+        android:layout_width="120dp"
+        android:layout_height="87dp"
         android:layout_marginBottom="35dp"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbarperfil"
-        tools:srcCompat="@drawable/user" />
+        tools:srcCompat="@drawable/loginuser" />
 
     <TextView
         android:id="@+id/textView9"
@@ -47,8 +47,8 @@
 
     <EditText
         android:id="@+id/editTextText5"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="338dp"
+        android:layout_height="48dp"
         android:layout_marginStart="34dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="8dp"
@@ -74,8 +74,8 @@
 
     <EditText
         android:id="@+id/editTextText9"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="340dp"
+        android:layout_height="54dp"
         android:layout_marginStart="33dp"
         android:layout_marginEnd="33dp"
         android:layout_marginBottom="19dp"
@@ -91,8 +91,8 @@
 
     <EditText
         android:id="@+id/editTextText6"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="338dp"
+        android:layout_height="50dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="12dp"
@@ -118,8 +118,8 @@
 
     <EditText
         android:id="@+id/editTextText7"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="333dp"
+        android:layout_height="51dp"
         android:layout_marginStart="35dp"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="30dp"
@@ -145,8 +145,8 @@
 
     <Button
         android:id="@+id/button11"
-        android:layout_width="129dp"
-        android:layout_height="0dp"
+        android:layout_width="131dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="47dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#f7959a"
