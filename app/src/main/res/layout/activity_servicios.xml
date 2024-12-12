@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ServiciosActivity">
+
+    <Button
+        android:id="@+id/btnAmbar"
+        android:layout_width="337dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="SPA AMBAR"
+        app:layout_constraintBottom_toTopOf="@+id/btnDiamante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRubi" />
+
+    <Button
+        android:id="@+id/btnLimpieza"
+        android:layout_width="328dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="LIMPIEZA FACIAL PROFUNDA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDepilacion" />
+
+    <Button
+        android:id="@+id/btnKids"
+        android:layout_width="327dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="SPA KIDS"
+        app:layout_constraintBottom_toTopOf="@+id/btnDepilacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLove" />
+
+    <Button
+        android:id="@+id/btnDiamante"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="SPA DIAMANTE"
+        app:layout_constraintBottom_toTopOf="@+id/btnTurquesa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAmbar" />
+
+    <Button
+        android:id="@+id/btnRubi"
+        android:layout_width="338dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/custom_text"
+        android:backgroundTint="#f7959a"
+        android:text="SPA RUBI"
+        app:layout_constraintBottom_toTopOf="@+id/btnAmbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnReservaa" />
+
+    <Button
+        android:id="@+id/btnDepilacion"
+        android:layout_width="334dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="9dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="DEPILACION EN CERA CORPORAL"
+        app:layout_constraintBottom_toTopOf="@+id/btnLimpieza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnKids" />
+
+    <Button
+        android:id="@+id/btnTurquesa"
+        android:layout_width="326dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="SPA TURQUESA"
+        app:layout_constraintBottom_toTopOf="@+id/btnLove"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnDiamante" />
+
+    <Button
+        android:id="@+id/btnLove"
+        android:layout_width="331dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="17dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="LOVE SPA"
+        app:layout_constraintBottom_toTopOf="@+id/btnKids"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTurquesa" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="127dp"
+        android:layout_marginEnd="40dp"
+        android:fontFamily="casual"
+        android:text="Servicios"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnReservaa"
+        app:layout_constraintEnd_toStartOf="@+id/btnReservaa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="#f7959a"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/btnReservaa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnReservaa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="btnReserva"
+        android:text="Button"
+        app:layout_constraintBottom_toTopOf="@+id/btnRubi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

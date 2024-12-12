@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "88601461313",
+    "project_id": "homespa-182bc24a",
+    "storage_bucket": "homespa-182bc24a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88601461313:android:b7829f1fc10e0ba90cfcc0",
+        "android_client_info": {
+          "package_name": "com.ldss.proyectosandroid.home_spa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrSirqTuWWm3vgEXE27Aox7QXqdBEBHrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88601461313:android:6d8f883989ab25d00cfcc0",
+        "android_client_info": {
+          "package_name": "com.lt.spahome"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrSirqTuWWm3vgEXE27Aox7QXqdBEBHrk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

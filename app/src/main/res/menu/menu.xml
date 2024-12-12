@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/icon_inicio"
+        android:icon="@drawable/ic_inicio"
+        android:title="Regresar al inicio"
+        app:showAsAction="always"
+    ></item>
+
+
+    <item
+        android:id="@+id/icon_calificacion"
+        android:icon="@drawable/ic_calificacion"
+        android:title="agregar reseña"
+        app:showAsAction="always"
+        ></item>
+
+    <item
+        android:id="@+id/icon_reserva"
+        android:icon="@drawable/ic_reserva"
+        android:title="agregar reserva"
+        app:showAsAction="always"
+        ></item>
+
+
+    <item
+        android:id="@+id/icon_historial"
+        android:icon="@drawable/ic_historial"
+        android:title="ver historial"
+        app:showAsAction="always"
+        ></item>
+
+
+
+    <item
+        android:id="@+id/icon_perfil"
+        android:icon="@drawable/ic_perfil"
+        android:title="ver perfil"
+        app:showAsAction="always"
+        ></item>
+
+
+</menu>

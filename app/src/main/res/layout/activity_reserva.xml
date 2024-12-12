@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE5E6"
+    tools:context=".ReservaActivity">
+
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="179dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="2dp"
+        android:fontFamily="casual"
+        android:text="Reserva tu cita"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CalendarView
+        android:id="@+id/calendario"
+        android:layout_width="364dp"
+        android:layout_height="299dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="11dp"
+        android:focusedMonthDateColor="@color/black"
+        android:textAlignment="center"
+        android:theme="@style/TimePickerprueba"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="363dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre "
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/txtNombreCompletoReserva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_text"
+            android:inputType="text"
+            android:padding="12dp"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="164dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/calendario">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hora:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txthora"
+            android:layout_width="108dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_text"
+            android:onClick="abrirHora"
+            android:text="00:00"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="186dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calendario">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="81dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fecha:"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtFecha"
+            android:layout_width="112dp"
+            android:layout_height="30dp"
+            android:background="@drawable/custom_text"
+            android:text="--/--/--"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="54dp"
+        android:background="@drawable/custom_button"
+        android:text="Confirmar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="159dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="31dp"
+        android:background="@drawable/custom_button"
+        android:text="Cancelar"
+        android:onClick="btncancelar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="374dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="21dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintHorizontal_bias="0.585"
+        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Telefono"
+            android:textColor="@color/black"
+
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/nmTelefonoRerserva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/custom_text"
+            android:ems="10"
+            android:inputType="phone"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="362dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Direccion"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/txtDireccionReserva"
+                android:layout_width="318dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_text"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:textColor="@color/black"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btnmapa"
+                android:layout_width="39dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/logoubicacion"
+                android:onClick="Mapa" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfilActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarperfil"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="51dp"
+        android:background="#f7959a"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="114dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarperfil"
+        tools:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="NOMBRE"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText5"
+        app:layout_constraintStart_toStartOf="@+id/editTextText5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextText5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/custom_text"
+        android:backgroundTint="#fac5ca"
+        android:ems="10"
+        android:hint="ㅤㅤㅤ"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="APELLIDO"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText9"
+        app:layout_constraintStart_toStartOf="@+id/editTextText9"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText5" />
+
+    <EditText
+        android:id="@+id/editTextText9"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/custom_text"
+        android:backgroundTint="#fac5ca"
+        android:ems="10"
+        android:hint="ㅤㅤㅤ"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+    <EditText
+        android:id="@+id/editTextText6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/custom_text"
+        android:backgroundTint="#fac5ca"
+        android:ems="10"
+        android:hint="ㅤㅤㅤ"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="DIRECCION"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText6"
+        app:layout_constraintStart_toStartOf="@+id/editTextText6"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText9" />
+
+    <EditText
+        android:id="@+id/editTextText7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/custom_text"
+        android:backgroundTint="#fac5ca"
+        android:ems="10"
+        android:hint="ㅤㅤㅤ"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/button11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="TELEFONO"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText7"
+        app:layout_constraintStart_toStartOf="@+id/editTextText7"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText6" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="129dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="47dp"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#f7959a"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText7" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "944701009920",
+    "project_id": "home-spa-9002a",
+    "storage_bucket": "home-spa-9002a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944701009920:android:d67a4403915a17938a28e5",
+        "android_client_info": {
+          "package_name": "com.ldss.proyectosandroid.home_spa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfgWuZqckeNxUiMyzgWWWlbOoqkuT5yU0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

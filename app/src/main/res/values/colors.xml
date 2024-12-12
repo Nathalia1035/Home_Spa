@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="rosado">#EF73AB</color>
+
+
+
+    <style name="TimePicker" parent="android:Theme.Material.Dialog" >
+        <item name="android:colorAccent">@color/rosado</item>
+        <item name="android:textColor">@color/rosado</item>
+
+    </style>
+
+
+    <style name="TimePickerprueba" parent="android:Theme.Material.Dialog" >
+        <item name="android:colorAccent">@color/rosado</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="CalenderViewWeekCustomText" parent="android:TextAppearance.DeviceDefault.Small">
+        <item name="android:textColor">@color/black</item>
+    </style>
+</resources>

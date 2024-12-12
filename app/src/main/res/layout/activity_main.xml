@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE5E6"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="4dp"
+        android:background="#f7959a"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="412dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="13dp"
+        android:text="Home Spa"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="406dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:text="Especialista en técnicas de relajacion, ofrecemos salud y bienestar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="9dp"
+        android:text="Fotos"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/vistaImagenes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="@+id/vistaImagenes"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <GridView
+        android:id="@+id/vistaImagenes"
+        android:layout_width="380dp"
+        android:layout_height="467dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="44dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
