@@ -60,8 +60,8 @@ public class Reserva {
     public String toString() {
         return "Fecha: " + fecha + "\n" +  // Salto de línea después de la fecha
                 "Hora: " + hora + "\n" + // Salto de línea después de la reseña
-                "Nombre: " + nombre + " ★" + // Muestra las estrellas al final
-                "direccion: " + direccion + " ★" + // Muestra las estrellas al final
-                "Telefono: " + telefono + " ★"; // Muestra las estrellas al final
+                "Nombre: " + nombre + "\n" + // Muestra las estrellas al final
+                "direccion: " + direccion + "\n" + // Muestra las estrellas al final
+                "Telefono: " + telefono + "\n"; // Muestra las estrellas al final
     }
 }
