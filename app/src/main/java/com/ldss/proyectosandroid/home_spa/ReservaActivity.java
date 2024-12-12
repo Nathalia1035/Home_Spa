@@ -112,7 +112,7 @@ public class ReservaActivity extends AppCompatActivity {
         databaseReference.child("Reserva").setValue(r).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 Toast.makeText(this, "Reserva exitosa", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ReservaActivity.this,Reserva_ClienteActivity.class);
+                Intent intent = new Intent(ReservaActivity.this, HistorialActivity.class);
                 startActivity(intent);
                 limpiarcajas();
 
