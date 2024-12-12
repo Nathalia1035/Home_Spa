@@ -44,6 +44,7 @@
 
     <LinearLayout
         android:id="@+id/linearLayout4"
+        style="‎ ‎ "
         android:layout_width="363dp"
         android:layout_height="63dp"
         android:layout_marginBottom="5dp"
@@ -68,6 +69,7 @@
             android:background="@drawable/custom_text"
             android:inputType="text"
             android:padding="12dp"
+            android:text="‎ ‎ "
             android:textColor="@color/black"
             android:textStyle="normal" />
     </LinearLayout>
@@ -94,9 +96,9 @@
             android:textSize="18dp" />
 
         <TextView
-            android:id="@+id/txthora"
-            android:layout_width="108dp"
-            android:layout_height="30dp"
+            android:id="@+id/txtHoraReserva"
+            android:layout_width="107dp"
+            android:layout_height="match_parent"
             android:background="@drawable/custom_text"
             android:onClick="abrirHora"
             android:text="00:00"
@@ -130,9 +132,9 @@
             android:textSize="18dp" />
 
         <TextView
-            android:id="@+id/txtFecha"
-            android:layout_width="112dp"
-            android:layout_height="30dp"
+            android:id="@+id/txtFechaReserva"
+            android:layout_width="113dp"
+            android:layout_height="match_parent"
             android:background="@drawable/custom_text"
             android:text="--/--/--"
             android:textAlignment="center"
@@ -142,11 +144,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnConfirmarRes"
         android:layout_width="0dp"
         android:layout_height="40dp"
         android:layout_marginEnd="54dp"
         android:background="@drawable/custom_button"
+        android:onClick="guardarReserva"
         android:text="Confirmar"
         app:layout_constraintBaseline_toBaselineOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -163,7 +166,7 @@
         android:text="Cancelar"
         android:onClick="btncancelar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirmarRes"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
@@ -174,9 +177,9 @@
         android:layout_marginBottom="21dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/button6"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/btnConfirmarRes"
         app:layout_constraintHorizontal_bias="0.585"
-        app:layout_constraintStart_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/btnConfirmarRes"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout5">
 
         <TextView
@@ -196,6 +199,7 @@
             android:background="@drawable/custom_text"
             android:ems="10"
             android:inputType="phone"
+            android:text="‎ ‎ "
             android:textColor="@color/black"
             android:textStyle="normal" />
     </LinearLayout>
@@ -228,21 +232,24 @@
 
             <EditText
                 android:id="@+id/txtDireccionReserva"
+                style="‎ ‎ "
                 android:layout_width="318dp"
                 android:layout_height="match_parent"
                 android:background="@drawable/custom_text"
                 android:ems="10"
                 android:inputType="textPostalAddress"
+                android:text="‎ ‎ "
                 android:textColor="@color/black"
                 android:textStyle="normal" />
 
             <Button
                 android:id="@+id/btnmapa"
-                android:layout_width="39dp"
+                android:layout_width="53dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:background="@drawable/logoubicacion"
-                android:onClick="Mapa" />
+                android:onClick="Mapa"
+                android:text="‎ " />
         </LinearLayout>
 
     </LinearLayout>

@@ -33,6 +33,15 @@ public class RegistroPersonaActivity extends AppCompatActivity {
     DatabaseReference databaseReference;
 
 
+    private void limpiarcajas() {
+        documentoR.setText("");
+        nombreR.setText("");
+        apellidoR.setText("");
+        direccionR.setText("");
+        telefonoR.setText("");
+        passwordR.setText("");
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,15 +58,6 @@ public class RegistroPersonaActivity extends AppCompatActivity {
 
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
-    }
-
-    private void limpiarcajas() {
-        documentoR.setText("");
-        nombreR.setText("");
-        apellidoR.setText("");
-        direccionR.setText("");
-        telefonoR.setText("");
-        passwordR.setText("");
     }
 
     private void validacion() {

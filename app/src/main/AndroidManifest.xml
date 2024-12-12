@@ -26,7 +26,8 @@
             android:exported="false" />
         <activity
             android:name=".ServiciosActivity"
-            android:exported="false" />
+            android:exported="false">
+        </activity>
         <activity
             android:name=".RegistroPersonaActivity"
             android:exported="false" />
@@ -68,7 +69,14 @@
             android:exported="false" />
         <activity
             android:name=".ReservaActivity"
-            android:exported="true" />
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
+    </activity>
         <activity
             android:name=".CalficacionActivity"
             android:exported="false" />

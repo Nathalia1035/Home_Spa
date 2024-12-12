@@ -21,6 +21,7 @@ import com.google.android.libraries.places.widget.model.AutocompleteActivityMode
 import com.google.android.gms.common.api.Status;
 import android.util.Log; // Importa Log
 
+import com.ldss.proyectosandroid.home_spa.modelo.Reserva;
 
 
 import androidx.annotation.NonNull;
@@ -32,6 +33,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.maps.model.PlaceFeature;
 import com.google.android.libraries.places.api.model.Place;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.ldss.proyectosandroid.home_spa.modelo.Registro;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
@@ -45,6 +49,12 @@ public class ReservaActivity extends AppCompatActivity {
     TextView fecha;
     TextView Thora;
     TextView txtdireccion;
+    TextView nombre;
+    TextView telefono;
+    Button reserva;
+
+    DatabaseReference databaseReference;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,10 +62,15 @@ public class ReservaActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_reserva);
 
+
         calendario = findViewById(R.id.calendario);
-        fecha = findViewById(R.id.txtFecha);
-        Thora = findViewById(R.id.txthora);
+        fecha = findViewById(R.id.txtFechaReserva);
+        Thora = findViewById(R.id.txtHoraReserva);
         txtdireccion = findViewById(R.id.txtDireccionReserva);
+        nombre = findViewById(R.id.txtNombreCompletoReserva);
+        telefono = findViewById(R.id.nmTelefonoRerserva);
+
+        databaseReference = FirebaseDatabase.getInstance().getReference("Reserva:" );
 
         Places.initialize(getApplicationContext(), "YOUR_API_KEY");
         Button searchButton = findViewById(R.id.btnmapa);
@@ -70,6 +85,42 @@ public class ReservaActivity extends AppCompatActivity {
                 fecha.setText(Fecha);
             }
         });
+    }
+    private void limpiarcajas() {
+        fecha.setText("");
+        Thora.setText("");
+        nombre.setText("");
+        txtdireccion.setText("");
+        telefono.setText("");
+    }
+
+    public void guardarReserva(View view){
+        String Fecha = fecha.getText().toString();
+        String Hora = Thora.getText().toString();
+        String Nombre = nombre.getText().toString();
+        String Direccion = txtdireccion.getText().toString();
+        String Telefono = telefono.getText().toString();
+
+
+        Reserva r = new Reserva();
+        r.setFecha(Fecha);
+        r.setHora(Hora);
+        r.setNombre(Nombre);
+        r.setDireccion(Direccion);
+        r.setTelefono(Telefono);
+
+        databaseReference.child("Reserva").setValue(r).addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                Toast.makeText(this, "Reserva exitosa", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(ReservaActivity.this,Reserva_ClienteActivity.class);
+                startActivity(intent);
+                limpiarcajas();
+
+            } else {
+                Toast.makeText(this, " " + task.getException(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private void openAutocomplete() {
@@ -154,5 +205,10 @@ public class ReservaActivity extends AppCompatActivity {
             }
         }
     }
+
+
+
+
+
 
 }
