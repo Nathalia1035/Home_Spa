@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.RadioButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AlertDialog;
@@ -120,11 +122,21 @@ public class ServiciosActivity extends AppCompatActivity {
         AlertDialog dialog = builder.create();
 
         Button btnReservaRubi = dialogView.findViewById(R.id.btnReservaRubi);
+        RadioButton checkInd = dialogView.findViewById(R.id.radioButtonInd);
+        RadioButton checkPar = dialogView.findViewById(R.id.radioButtonPar);
         Button btnCerrar = dialogView.findViewById(R.id.btnCerrarRubi);
         btnReservaRubi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ServiciosActivity.this,ReservaActivity.class);
+                if (checkInd.isChecked()){
+                    intent.putExtra("opcSeleccionada","Individual");
+                }else if (checkPar.isChecked()){
+                    intent.putExtra("opcSeleccionada","Pareja");
+                }else{
+                    intent.putExtra("opcSeleccionada","Ninguna");
+
+                }
                 startActivity(intent);
             }
         });

@@ -101,6 +101,8 @@ public class ReservaActivity extends AppCompatActivity {
         String Direccion = txtdireccion.getText().toString();
         String Telefono = telefono.getText().toString();
 
+        Intent getIntent = getIntent();
+        String tipoReserva = getIntent.getStringExtra("opcSeleccionada");
 
         Reserva r = new Reserva();
         r.setUID(Nombre);
@@ -109,6 +111,8 @@ public class ReservaActivity extends AppCompatActivity {
         r.setNombre(Nombre);
         r.setDireccion(Direccion);
         r.setTelefono(Telefono);
+        r.setTipoReserva(tipoReserva);
+
         String id= databaseReference.push().getKey();
         databaseReference.child(id).setValue(r).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {

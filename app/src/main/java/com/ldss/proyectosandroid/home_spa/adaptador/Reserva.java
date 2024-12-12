@@ -8,6 +8,15 @@ public class Reserva {
     private  String nombre;
     private  String direccion;
     private  String telefono;
+    private String tipoReserva;
+
+    public String getTipoReserva() {
+        return tipoReserva;
+    }
+
+    public void setTipoReserva(String tipoReserva) {
+        this.tipoReserva = tipoReserva;
+    }
 
     public String getUID() {
         return UID;
@@ -62,6 +71,7 @@ public class Reserva {
                 "Hora: " + hora + "\n" + // Salto de línea después de la reseña
                 "Nombre: " + nombre + "\n" + // Muestra las estrellas al final
                 "direccion: " + direccion + "\n" + // Muestra las estrellas al final
-                "Telefono: " + telefono + "\n"; // Muestra las estrellas al final
+                "Telefono: " + telefono + "\n" +// Muestra las estrellas al final
+                "Tipo Reserva: " + tipoReserva + "\n"; // Muestra las estrellas al final
     }
 }

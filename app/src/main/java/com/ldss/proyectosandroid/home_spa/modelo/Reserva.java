@@ -8,6 +8,15 @@ public class Reserva {
     private  String nombre;
     private  String direccion;
     private  String telefono;
+    private String tipoReserva;
+
+    public String getTipoReserva() {
+        return tipoReserva;
+    }
+
+    public void setTipoReserva(String tipoReserva) {
+        this.tipoReserva = tipoReserva;
+    }
 
     public String getUID() {
         return UID;

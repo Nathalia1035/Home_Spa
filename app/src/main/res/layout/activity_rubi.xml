@@ -16,7 +16,7 @@
         android:text="• Aromaterapia"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonInd"
         app:layout_constraintStart_toStartOf="@+id/textView18"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -91,7 +91,7 @@
         android:text="Duracion: 70 minutos"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonPar"
         app:layout_constraintEnd_toEndOf="@+id/textView16"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
@@ -132,10 +132,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+        app:layout_constraintTop_toBottomOf="@+id/radioButtonInd" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/radioButtonInd"
         android:layout_width="106dp"
         android:layout_height="39dp"
         android:layout_marginStart="34dp"
@@ -143,19 +143,19 @@
         android:layout_marginBottom="17dp"
         android:text="Individual: $90.000"
         app:layout_constraintBottom_toTopOf="@+id/btnReservaRubi"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
+        app:layout_constraintEnd_toStartOf="@+id/radioButtonPar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView20" />
 
     <RadioButton
-        android:id="@+id/radioButton2"
+        android:id="@+id/radioButtonPar"
         android:layout_width="108dp"
         android:layout_height="0dp"
         android:layout_marginBottom="55dp"
         android:text="Pareja: $180.000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        app:layout_constraintStart_toEndOf="@+id/radioButtonInd"
         app:layout_constraintTop_toBottomOf="@+id/btnCerrarRubi" />
 
     <Button
@@ -166,7 +166,7 @@
         android:layout_marginBottom="211dp"
         android:background="?android:attr/selectableItemBackground"
         android:text="X"
-        app:layout_constraintBottom_toTopOf="@+id/radioButton2"
+        app:layout_constraintBottom_toTopOf="@+id/radioButtonPar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView14"
         app:layout_constraintTop_toTopOf="parent" />
