@@ -2,6 +2,7 @@ package com.ldss.proyectosandroid.home_spa;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -101,22 +102,31 @@ public class RegistroPersonaActivity extends AppCompatActivity {
             r.setDireccionR(direccion);
             r.setTelefonoR(telefono);
             r.setPasswordR(password);
-            databaseReference.child("Registro").child(r.getUID()).setValue(r);
-            Toast.makeText(this, "Registro existoso", Toast.LENGTH_SHORT).show();
-            Intent intent = new Intent(RegistroPersonaActivity.this,MainActivity.class);
-            startActivity(intent);
-            limpiarcajas();
+
+            // Depuración: mostrar los datos antes de enviarlos a Firebase
+            Log.d("Registro", "Datos a registrar: ");
+            Log.d("Registro", "Correo: " + r.getUID());
+            Log.d("Registro", "Nombre: " + r.getNombreR());
+            Log.d("Registro", "Apellido: " + r.getApellidoR());
+            Log.d("Registro", "Dirección: " + r.getDireccionR());
+            Log.d("Registro", "Teléfono: " + r.getTelefonoR());
+            Log.d("Registro", "Contraseña: " + r.getPasswordR());
+
+            databaseReference.child("Registro").child(documento.replace(".", ",")).setValue(r).addOnCompleteListener(task -> {
+                if (task.isSuccessful()) {
+                    Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(RegistroPersonaActivity.this,LoginActivity.class);
+                    startActivity(intent);
+                    limpiarcajas();
+                } else {
+                    Toast.makeText(this, "Error al registrar usuario", Toast.LENGTH_SHORT).show();
+                }
+            });
         }
-
     }
 
-    public void abrirMapa(View view) {
-        Intent intent = new Intent(RegistroPersonaActivity.this, MapaRegistroActivity.class);
-        startActivity(intent);
-    }
 
 }
-
 
 
 

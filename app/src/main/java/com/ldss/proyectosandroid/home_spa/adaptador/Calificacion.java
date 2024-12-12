@@ -33,6 +33,9 @@ public class Calificacion {
 
     @Override
     public String toString() {
-        return "Fecha: " + fecha + "Reseña: " + opinion + " - " + "Estrellas: " + estrellas + "★";
+        return "Fecha: " + fecha + "\n" +  // Salto de línea después de la fecha
+                "Reseña: " + opinion + "\n" + // Salto de línea después de la reseña
+                "Puntuación: " + estrellas + " ★"; // Muestra las estrellas al final
     }
+
 }

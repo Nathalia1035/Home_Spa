@@ -67,12 +67,12 @@ public class CalficacionActivity extends AppCompatActivity {
         opinionAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listOpinion);
         listViewOpinion.setAdapter(opinionAdapter);
 
-        /*ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
+        ratingBar.setOnRatingBarChangeListener(new RatingBar.OnRatingBarChangeListener() {
             @Override
             public void onRatingChanged(RatingBar ratingBar, float v, boolean b) {
-                Toast.makeText(CalficacionActivity.this, "Hola", Toast.LENGTH_SHORT).show();
+                // Toast.makeText(CalficacionActivity.this, "Hola", Toast.LENGTH_SHORT).show();
             }
-        });*/
+        });
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -122,6 +122,9 @@ public class CalficacionActivity extends AppCompatActivity {
 
 
         Calificacion data = new Calificacion();
+        data.setOpinion(opinion);
+        data.setEstrellas(estrella);
+        data.setFecha(fechaActual);
 
         String id= databaseReference.push().getKey();
         if (id !=null){

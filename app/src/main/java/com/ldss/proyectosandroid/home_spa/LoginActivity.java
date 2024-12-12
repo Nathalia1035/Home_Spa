@@ -39,8 +39,6 @@ public class LoginActivity extends AppCompatActivity {
         txtNombreusuariologin=findViewById(R.id.txtNombreusuarioLogin);
         txtContrasenausuariologin=(EditText) findViewById(R.id.txtContrasenaRegistro);
 
-        Intent RegistroPersonaActivity = new Intent(LoginActivity.this, com.ldss.proyectosandroid.home_spa.RegistroPersonaActivity.class);
-        startActivity(RegistroPersonaActivity);
 
         Ingresa=findViewById(R.id.buttonLogin);
 
@@ -51,21 +49,21 @@ public class LoginActivity extends AppCompatActivity {
                 String Correo = txtNombreusuariologin.getText().toString();
                 String Password = txtContrasenausuariologin.getText().toString();
 
-                auth.signInWithEmailAndPassword(Correo, Password)
+                auth.signInWithEmailAndPassword(Correo,Password)
                         .addOnCompleteListener(LoginActivity.this, task -> {
                             if (task.isSuccessful()) {
-                                Toast.makeText(LoginActivity.this, "Login exitoso", Toast.LENGTH_SHORT).show();
-                                Intent nuevo = new Intent(LoginActivity.this, CitasClienteActivity.class);
+                                Intent nuevo = new Intent(LoginActivity.this, MainActivity.class);
                                 startActivity(nuevo);
                             } else {
-                                Toast.makeText(LoginActivity.this, "Fallo en el login: " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                // Toast.makeText(LoginActivity.this, "Fallo en el login " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(LoginActivity.this, "Usuario o contraseña incorrecta ", Toast.LENGTH_SHORT).show();
                             }
                         });
 
             }
 
         });
-        }
+    }
 
     //Boton registrar
     public void btnRegistrar(View view) {
@@ -73,7 +71,7 @@ public class LoginActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    }
+}
 
 
 
